@@ -6,11 +6,11 @@ import android.widget.TextView
 import androidx.core.widget.TextViewCompat
 import androidx.fragment.app.DialogFragment
 import com.kodextech.cleaques.base.BaseActivity
-import com.kodextech.cleaques.utils.getCountryDialCode
-import com.kodextech.cleaques.utils.isValidPhone
-import com.kodextech.cleaques.utils.showToast
 import com.kodextech.elleapp.R
 import com.kodextech.elleapp.dashboard.Dashboard
+import com.kodextech.elleapp.utils.getCountryDialCode
+import com.kodextech.elleapp.utils.isValidPhone
+import com.kodextech.elleapp.utils.showToast
 import com.ybs.countrypicker.CountryPicker
 import kotlinx.android.synthetic.main.activity_auth.*
 import java.io.Serializable

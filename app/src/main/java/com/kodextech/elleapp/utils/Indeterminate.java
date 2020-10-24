@@ -14,7 +14,7 @@
  *    limitations under the License.
  */
 
-package com.kodextech.cleaques.utils;
+package com.kodextech.elleapp.utils;
 
 /**
  * If a view implements this interface passed to the HUD as a custom view, its animation

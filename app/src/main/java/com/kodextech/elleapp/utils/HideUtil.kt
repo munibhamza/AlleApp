@@ -15,7 +15,7 @@
  */
 @file:Suppress("unused")
 
-package com.kodextech.cleaques.utils
+package com.kodextech.elleapp.utils
 
 
 import android.annotation.SuppressLint
@@ -34,7 +34,7 @@ import android.widget.ScrollView
 import android.widget.TextView
 import androidx.appcompat.app.AppCompatActivity
 import androidx.recyclerview.widget.RecyclerView
-import com.kodextech.cleaques.R
+import com.kodextech.elleapp.R
 
 
 class HideUtil private constructor(activity: AppCompatActivity, content: ViewGroup?) {

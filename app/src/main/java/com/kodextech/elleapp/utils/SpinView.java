@@ -1,4 +1,4 @@
-/*
+package com.kodextech.elleapp.utils;/*
  *    Copyright 2015 Kaopiz Software Co., Ltd.
  *
  *    Licensed under the Apache License, Version 2.0 (the "License");
@@ -14,7 +14,6 @@
  *    limitations under the License.
  */
 
-package com.kodextech.cleaques.utils;
 
 import android.content.Context;
 import android.graphics.Canvas;
@@ -22,7 +21,7 @@ import android.util.AttributeSet;
 
 import androidx.appcompat.widget.AppCompatImageView;
 
-import com.kodextech.cleaques.R;
+import com.kodextech.elleapp.R;
 
 
 public class SpinView extends AppCompatImageView implements Indeterminate {
@@ -43,7 +42,7 @@ public class SpinView extends AppCompatImageView implements Indeterminate {
     }
 
     private void init() {
-        setImageResource(R.drawable.ic_logo);
+        setImageResource(R.drawable.alleapplogo);
         mFrameTime = 1000 / 12;
         mUpdateViewRunnable = new Runnable() {
             @Override

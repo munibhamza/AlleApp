@@ -1,4 +1,4 @@
-package com.kodextech.cleaques.utils
+package com.kodextech.elleapp.utils
 
 import android.content.Context
 import android.content.Intent
@@ -9,7 +9,8 @@ import android.text.TextUtils
 import android.util.Patterns
 import androidx.appcompat.widget.AppCompatEditText
 import androidx.appcompat.widget.AppCompatTextView
-import com.kodextech.cleaques.R
+import com.kodextech.elleapp.R
+
 
 import java.math.BigDecimal
 import java.text.DecimalFormat

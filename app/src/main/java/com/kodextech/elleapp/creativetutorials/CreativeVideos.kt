@@ -6,7 +6,7 @@ import com.kodextech.cleaques.base.BaseActivity
 import com.kodextech.elleapp.R
 import kotlinx.android.synthetic.main.activity_creative_videos.*
 
-class CreativeBlogCreativeVideos : BaseActivity() {
+class CreativeVideos : BaseActivity() {
     override fun onSetupViewGroup() {
         mViewGroup = findViewById(R.id.contentcreativevideos)
     }
