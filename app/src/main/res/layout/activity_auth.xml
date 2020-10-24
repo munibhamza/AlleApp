@@ -172,7 +172,7 @@
                 android:gravity="center"
                 android:textColor="@color/appcolorlight"/>
             <androidx.appcompat.widget.AppCompatTextView
-                android:id="@+id/signup"
+                android:id="@+id/tvSignupSiginIn"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="SIGN Up"

@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/_100sdp"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        app:cardElevation="@dimen/_3sdp">
+
+        <RelativeLayout
+            android:layout_margin="@dimen/_5sdp"
+            android:padding="@dimen/_10sdp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/blogIcon"
+                android:layout_width="@dimen/_100sdp"
+                android:layout_height="@dimen/_100sdp"
+                android:src="@drawable/blogiconleft"/>
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tvblogTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@id/blogIcon"
+                android:maxLines="2"
+                android:layout_marginStart="@dimen/_2sdp"
+                android:text="Why your Social Media Campaigns kilti trucei"
+                android:textSize="@dimen/_12sdp"
+                android:fontFamily="@font/poppins_medium"
+                android:textColor="@color/colorBlack"/>
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tvblogReadTime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@id/blogIcon"
+                android:text="6 minutes read"
+                android:textSize="@dimen/_10sdp"
+                android:layout_alignParentBottom="true"
+                android:layout_marginStart="@dimen/_2sdp"
+                android:fontFamily="@font/poppins_medium"
+                android:textColor="@color/colorLightGray"/>
+
+
+        </RelativeLayout>
+
+    </androidx.cardview.widget.CardView>
+
+
+</RelativeLayout>

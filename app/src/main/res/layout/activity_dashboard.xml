@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorWhite"
+    tools:context=".dashboard.Dashboard">
+
+    <LinearLayout
+        android:id="@+id/header"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:background="@color/appcolor"
+        android:layout_height="@dimen/_50sdp"
+        android:weightSum="1">
+        <ImageView
+            android:id="@+id/dashboardmenu"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:src="@drawable/ic_menu"
+            android:layout_marginStart="@dimen/_10sdp"
+            app:tint="@color/colorWhite"
+            android:layout_weight=".1"/>
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight=".7"
+            android:text="ALLEAPP"
+            android:textSize="@dimen/_16sdp"
+            android:fontFamily="@font/poppins_bold"
+            android:gravity="center"/>
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_weight=".2"
+            android:padding="@dimen/_2sdp"
+            android:src="@drawable/oval_girl" />
+    </LinearLayout>
+
+
+    <TextView
+        android:id="@+id/tvlabel"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/header"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="@dimen/_10sdp"
+        android:layout_marginEnd="@dimen/_10sdp"
+        android:text="SHE IS HERE! \nLET'S GET \nSTARTED"
+        android:fontFamily="@font/poppins_medium"
+        android:textColor="@color/appcolor"
+        android:textSize="@dimen/_20sdp"/>
+    <LinearLayout
+        android:id="@+id/toprow"
+        android:layout_margin="@dimen/_5sdp"
+        android:layout_below="@id/tvlabel"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="1">
+        <LinearLayout
+            android:id="@+id/llCreativeTutorials"
+            android:padding="@dimen/_10sdp"
+            android:layout_margin="@dimen/_2sdp"
+            android:background="@drawable/bg_border"
+            android:layout_weight=".5"
+            android:layout_width="0dp"
+            android:layout_height="250dp"
+            android:orientation="vertical">
+            <androidx.appcompat.widget.AppCompatImageView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_100sdp"
+                android:src="@drawable/ic_social_network"
+                android:scaleType="centerCrop"/>
+            <androidx.appcompat.widget.AppCompatTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Creative \n Tutorials "
+                android:textSize="@dimen/_16sdp"
+                android:textColor="@color/appcolor"
+                android:fontFamily="@font/poppins_medium"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:gravity="center"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/llEntreBootcamp"
+            android:padding="@dimen/_10sdp"
+            android:layout_margin="@dimen/_2sdp"
+            android:background="@drawable/bg_border"
+            android:layout_weight=".5"
+            android:layout_width="0dp"
+            android:layout_height="250dp"
+            android:orientation="vertical">
+        <androidx.appcompat.widget.AppCompatImageView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_100sdp"
+            android:src="@drawable/ic_joind_today"
+            android:scaleType="centerCrop"/>
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Entrepreneurship \n bootcamp"
+            android:textSize="@dimen/_14sdp"
+            android:textColor="@color/appcolor"
+            android:fontFamily="@font/poppins_medium"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:gravity="center"/>
+    </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_alignParentBottom="true"
+        android:layout_margin="@dimen/_5sdp"
+        android:layout_below="@id/toprow"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="1">
+        <LinearLayout
+            android:id="@+id/llsellcraft"
+            android:padding="@dimen/_10sdp"
+            android:layout_margin="@dimen/_2sdp"
+            android:background="@drawable/bg_border"
+            android:layout_weight=".5"
+            android:layout_width="0dp"
+            android:layout_height="250dp"
+            android:orientation="vertical">
+            <androidx.appcompat.widget.AppCompatImageView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_100sdp"
+                android:src="@drawable/ic_social_network"
+                android:scaleType="centerCrop"/>
+            <androidx.appcompat.widget.AppCompatTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Sell Your \n Craft "
+                android:textSize="@dimen/_16sdp"
+                android:textColor="@color/appcolor"
+                android:fontFamily="@font/poppins_medium"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:gravity="center"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/llexploremore"
+            android:padding="@dimen/_10sdp"
+            android:layout_margin="@dimen/_2sdp"
+            android:background="@drawable/bg_border"
+            android:layout_weight=".5"
+            android:layout_width="0dp"
+            android:layout_height="250dp"
+            android:orientation="vertical">
+            <androidx.appcompat.widget.AppCompatImageView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_100sdp"
+                android:src="@drawable/ic_joind_today"
+                android:scaleType="centerCrop"/>
+            <androidx.appcompat.widget.AppCompatTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Explore \n More"
+                android:textSize="@dimen/_16sdp"
+                android:textColor="@color/appcolor"
+                android:fontFamily="@font/poppins_medium"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:gravity="center"/>
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+
+</RelativeLayout>
