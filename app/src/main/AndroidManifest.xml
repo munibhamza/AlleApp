@@ -9,7 +9,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.ElleApp">
-        <activity android:name=".blogs.CreativeBlog"></activity>
+        <activity android:name=".blogs.BlogDetails"></activity>
+        <activity android:name=".blogs.CreativeBlog" />
         <activity android:name=".blogs.BlogsCategory" />
         <activity android:name=".creativetutorials.CreativeVideos" />
         <activity android:name=".creativetutorials.TutorialsCategory" />

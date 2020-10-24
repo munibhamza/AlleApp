@@ -10,6 +10,8 @@ import com.kodextech.cleaques.utils.showToast
 import com.kodextech.elleapp.R
 import com.kodextech.elleapp.adapters.VideoCategoryAdapter
 import com.kodextech.elleapp.adapters.VideoCatgoryModel
+import com.kodextech.elleapp.dashboard.Dashboard
+import kotlinx.android.synthetic.main.headercategories.*
 
 import java.util.ArrayList
 
@@ -24,6 +26,9 @@ class BlogsCategory : BaseActivity() {
 
         setupAllBlogsRecycler()
 
+        ivBackCategories.setOnClickListener {
+            startActivity(Intent(this@BlogsCategory, Dashboard::class.java))
+        }
     }
 
     private fun setupAllBlogsRecycler(){

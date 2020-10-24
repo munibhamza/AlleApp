@@ -15,6 +15,7 @@ import com.kodextech.elleapp.adapters.VideoCatgoryModel
 import kotlinx.android.synthetic.main.activity_creative_blog.*
 import kotlinx.android.synthetic.main.activity_creative_videos.*
 import kotlinx.android.synthetic.main.activity_creative_videos.tvVideoCategoryTitle
+import kotlinx.android.synthetic.main.headercategories.*
 import java.util.ArrayList
 
 class CreativeBlog : BaseActivity() {
@@ -32,6 +33,10 @@ class CreativeBlog : BaseActivity() {
 
 
         setupAllBlogsRecycler()
+
+        ivBackCategories.setOnClickListener {
+            startActivity(Intent(this@CreativeBlog, BlogsCategory::class.java))
+        }
     }
 
     private fun setupAllBlogsRecycler(){
