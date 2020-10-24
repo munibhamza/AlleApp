@@ -1,6 +1,6 @@
 @file:Suppress("unused")
 
-package com.kodextech.cleaques.base
+package com.kodextech.elleapp.base
 
 import android.annotation.SuppressLint
 import android.app.Application

@@ -1,10 +1,11 @@
-package com.kodextech.cleaques.network
+package com.kodextech.elleapp.network
 
 import android.content.Context
 import android.content.SharedPreferences
 import android.os.Build
 import com.google.gson.Gson
-import com.kodextech.cleaques.base.BaseApplication
+import com.kodextech.elleapp.base.BaseApplication
+
 import com.kodextech.elleapp.model.User
 
 

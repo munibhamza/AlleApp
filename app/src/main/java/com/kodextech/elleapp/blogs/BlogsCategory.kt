@@ -5,13 +5,15 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
-import com.kodextech.cleaques.base.BaseActivity
-import com.kodextech.cleaques.utils.showToast
 import com.kodextech.elleapp.R
 import com.kodextech.elleapp.adapters.VideoCategoryAdapter
 import com.kodextech.elleapp.adapters.VideoCatgoryModel
+import com.kodextech.elleapp.base.BaseActivity
 import com.kodextech.elleapp.dashboard.Dashboard
+import com.kodextech.elleapp.utils.showToast
+import kotlinx.android.synthetic.main.activity_blogs_category.*
 import kotlinx.android.synthetic.main.headercategories.*
+import kotlinx.android.synthetic.main.headercategories.ivBackCategories
 
 import java.util.ArrayList
 
@@ -26,7 +28,7 @@ class BlogsCategory : BaseActivity() {
 
         setupAllBlogsRecycler()
 
-        ivBackCategories.setOnClickListener {
+        ivBackBlogCategories.setOnClickListener {
             startActivity(Intent(this@BlogsCategory, Dashboard::class.java))
         }
     }
@@ -49,27 +51,27 @@ class BlogsCategory : BaseActivity() {
             when(allCategoryList[position].categoryTitle){
 
                 "Paintings" ->{
-                    val intent = Intent(this@BlogsCategory, CreativeBlog::class.java)
+                    val intent = Intent(this@BlogsCategory, BlogDetails::class.java)
                     intent.putExtra("category","Paintings")
                     startActivity(intent)
                 }
                 "Art" ->{
-                    val intent = Intent(this@BlogsCategory, CreativeBlog::class.java)
+                    val intent = Intent(this@BlogsCategory, BlogDetails::class.java)
                     intent.putExtra("category","Art")
                     startActivity(intent)
                 }
                 "Beauty" ->{
-                    val intent = Intent(this@BlogsCategory, CreativeBlog::class.java)
+                    val intent = Intent(this@BlogsCategory, BlogDetails::class.java)
                     intent.putExtra("category","Beauty")
                     startActivity(intent)
                 }
                 "Cooking" ->{
-                    val intent = Intent(this@BlogsCategory, CreativeBlog::class.java)
+                    val intent = Intent(this@BlogsCategory, BlogDetails::class.java)
                     intent.putExtra("category","Cooking")
                     startActivity(intent)
                 }
                 "Modeling" ->{
-                    val intent = Intent(this@BlogsCategory, CreativeBlog::class.java)
+                    val intent = Intent(this@BlogsCategory, BlogDetails::class.java)
                     intent.putExtra("category","Modeling")
                     startActivity(intent)
                 }

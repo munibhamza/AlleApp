@@ -5,8 +5,9 @@ import android.os.Bundle
 import android.widget.TextView
 import androidx.core.widget.TextViewCompat
 import androidx.fragment.app.DialogFragment
-import com.kodextech.cleaques.base.BaseActivity
+
 import com.kodextech.elleapp.R
+import com.kodextech.elleapp.base.BaseActivity
 import com.kodextech.elleapp.dashboard.Dashboard
 import com.kodextech.elleapp.utils.getCountryDialCode
 import com.kodextech.elleapp.utils.isValidPhone

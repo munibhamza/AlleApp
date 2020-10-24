@@ -12,10 +12,10 @@ class BlogDetails : AppCompatActivity() {
         setContentView(R.layout.activity_blog_details)
 
         ivBackblogDetails.setOnClickListener {
-            startActivity(Intent(this@BlogDetails, CreativeBlog::class.java))
+            startActivity(Intent(this@BlogDetails, BlogsCategory::class.java))
         }
         tvCancelBlog.setOnClickListener {
-            startActivity(Intent(this@BlogDetails, CreativeBlog::class.java))
+            startActivity(Intent(this@BlogDetails, BlogDetails::class.java))
         }
     }
 }

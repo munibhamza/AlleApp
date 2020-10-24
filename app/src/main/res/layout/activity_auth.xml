@@ -5,6 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:id="@+id/authContent"
+    android:background="@color/colorWhite"
     tools:context=".auth.AuthAc">
 
     <RelativeLayout
@@ -30,6 +31,7 @@
                 android:orientation="horizontal">
 
                 <RelativeLayout
+                    style="@style/countrypicker_style"
                     android:id="@+id/rlCountryPicker"
                     android:layout_width="?actionBarSize"
                     android:layout_height="match_parent">

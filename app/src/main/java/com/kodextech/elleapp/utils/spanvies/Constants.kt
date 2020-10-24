@@ -2,7 +2,8 @@ package com.kodextech.cleaques.utils.spanvies
 
 import android.content.Intent
 import androidx.fragment.app.Fragment
-import com.kodextech.cleaques.base.BaseActivity
+import com.kodextech.elleapp.base.BaseActivity
+
 
 object Constants {
 

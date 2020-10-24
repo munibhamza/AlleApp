@@ -1,6 +1,6 @@
 @file:Suppress("unused")
 
-package com.kodextech.cleaques.network
+package com.kodextech.elleapp.network
 
 import android.util.Log
 import com.androidnetworking.AndroidNetworking

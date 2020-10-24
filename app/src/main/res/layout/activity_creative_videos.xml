@@ -5,6 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:id="@+id/contentcreativevideos"
+    android:background="@color/colorWhite"
     tools:context=".creativetutorials.CreativeVideos">
 
     <RelativeLayout
@@ -41,11 +42,10 @@
     </RelativeLayout>
 
     <androidx.recyclerview.widget.RecyclerView
-        android:id="@+id/rvVideos"
-        android:layout_marginTop="@dimen/_10sdp"
-        android:layout_below="@+id/headervideos"
+        android:id="@+id/recyclerView"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"/>
-
+        android:layout_height="match_parent"
+        android:layout_below="@+id/headervideos"
+        />
 
 </RelativeLayout>

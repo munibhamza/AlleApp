@@ -1,6 +1,6 @@
 @file:Suppress("unused", "UNUSED_PARAMETER")
 
-package com.kodextech.cleaques.base
+package com.kodextech.elleapp.base
 
 
 import android.app.Dialog
@@ -13,7 +13,8 @@ import android.view.WindowManager
 import androidx.appcompat.app.AppCompatActivity
 import androidx.fragment.app.Fragment
 import com.google.gson.Gson
-import com.kodextech.cleaques.utils.HideUtil
+import com.kodextech.elleapp.utils.HideUtil
+
 import com.kodextech.elleapp.R
 
 @Suppress("unused")

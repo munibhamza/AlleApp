@@ -1,12 +1,12 @@
 @file:Suppress("DEPRECATION")
 
-package com.kodextech.cleaques.base
+package com.kodextech.elleapp.base
 
 import android.content.Context
 import android.os.Bundle
 import android.view.View
 import androidx.fragment.app.Fragment
-import com.kodextech.cleaques.utils.HideUtil
+import com.kodextech.elleapp.utils.HideUtil
 
 
 abstract class BaseFragment : Fragment() {

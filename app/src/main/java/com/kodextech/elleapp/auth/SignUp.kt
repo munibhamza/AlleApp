@@ -3,8 +3,9 @@ package com.kodextech.elleapp.auth
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import com.kodextech.cleaques.base.BaseActivity
+
 import com.kodextech.elleapp.R
+import com.kodextech.elleapp.base.BaseActivity
 import com.kodextech.elleapp.dashboard.Dashboard
 import kotlinx.android.synthetic.main.activity_sign_up.*
 

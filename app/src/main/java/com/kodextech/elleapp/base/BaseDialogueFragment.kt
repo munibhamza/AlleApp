@@ -1,4 +1,4 @@
-package com.kodextech.cleaques.base
+package com.kodextech.elleapp.base
 
 import android.content.Context
 import android.graphics.Color
@@ -6,7 +6,7 @@ import android.graphics.drawable.ColorDrawable
 import android.os.Bundle
 import android.view.View
 import androidx.fragment.app.DialogFragment
-import com.kodextech.cleaques.utils.HideUtil
+import com.kodextech.elleapp.utils.HideUtil
 
 
 open class BaseDialogueFragment : DialogFragment() {

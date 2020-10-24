@@ -5,13 +5,13 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
-import com.kodextech.cleaques.base.BaseActivity
-import com.kodextech.cleaques.utils.showToast
 import com.kodextech.elleapp.R
 import com.kodextech.elleapp.adapters.BlogCategoryListModel
 import com.kodextech.elleapp.adapters.CreativeBlogListAdapter
 import com.kodextech.elleapp.adapters.VideoCategoryAdapter
 import com.kodextech.elleapp.adapters.VideoCatgoryModel
+import com.kodextech.elleapp.base.BaseActivity
+import com.kodextech.elleapp.utils.showToast
 import kotlinx.android.synthetic.main.activity_creative_blog.*
 import kotlinx.android.synthetic.main.activity_creative_videos.*
 import kotlinx.android.synthetic.main.activity_creative_videos.tvVideoCategoryTitle
@@ -34,7 +34,7 @@ class CreativeBlog : BaseActivity() {
 
         setupAllBlogsRecycler()
 
-        ivBackCategories.setOnClickListener {
+        ivBackCreativeBlog.setOnClickListener {
             startActivity(Intent(this@CreativeBlog, BlogsCategory::class.java))
         }
     }

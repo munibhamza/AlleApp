@@ -1,16 +1,19 @@
 package com.kodextech.elleapp.creativetutorials
 
+
 import android.content.Intent
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
-import com.kodextech.cleaques.base.BaseActivity
-import com.kodextech.cleaques.utils.showToast
 import com.kodextech.elleapp.R
 import com.kodextech.elleapp.adapters.VideoCategoryAdapter
 import com.kodextech.elleapp.adapters.VideoCatgoryModel
-import kotlinx.android.synthetic.main.activity_creative_videos.*
+import com.kodextech.elleapp.base.BaseActivity
+import com.kodextech.elleapp.dashboard.Dashboard
+import com.kodextech.elleapp.utils.showToast
+import kotlinx.android.synthetic.main.activity_tutorials_category.*
+import kotlinx.android.synthetic.main.headercategories.*
+import kotlinx.android.synthetic.main.headercategories.ivBackCategories
 import java.util.ArrayList
 
 class TutorialsCategory : BaseActivity() {
@@ -22,10 +25,11 @@ class TutorialsCategory : BaseActivity() {
         setContentView(R.layout.activity_tutorials_category)
         super.onCreate(savedInstanceState)
 
-
-
         setupAllCategoriesRecycler()
 
+        ivBackTutorialCategories.setOnClickListener {
+            startActivity(Intent(this@TutorialsCategory,Dashboard::class.java))
+        }
 
 
     }

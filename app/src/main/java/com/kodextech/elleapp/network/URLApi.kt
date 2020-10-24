@@ -1,5 +1,6 @@
 package com.dev.project.ruizpronos.network
-import com.kodextech.cleaques.network.NetworkMethod
+
+import com.kodextech.elleapp.network.NetworkMethod
 import org.json.JSONObject
 
 object URLApi {

@@ -10,8 +10,6 @@ import android.util.Patterns
 import androidx.appcompat.widget.AppCompatEditText
 import androidx.appcompat.widget.AppCompatTextView
 import com.kodextech.elleapp.R
-
-
 import java.math.BigDecimal
 import java.text.DecimalFormat
 import java.text.NumberFormat
