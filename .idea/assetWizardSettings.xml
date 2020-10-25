@@ -14,8 +14,8 @@
                         <option name="values">
                           <map>
                             <entry key="assetSourceType" value="FILE" />
-                            <entry key="outputName" value="ic_arrowright" />
-                            <entry key="sourceFile" value="$PROJECT_DIR$/../Desktop/arrowright.svg" />
+                            <entry key="outputName" value="ic_logo_medium" />
+                            <entry key="sourceFile" value="$PROJECT_DIR$/../Downloads/ElleTech Logo Vector-09-01-01.svg" />
                           </map>
                         </option>
                       </PersistentState>

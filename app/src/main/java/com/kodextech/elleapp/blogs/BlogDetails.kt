@@ -15,7 +15,7 @@ class BlogDetails : AppCompatActivity() {
             startActivity(Intent(this@BlogDetails, BlogsCategory::class.java))
         }
         tvCancelBlog.setOnClickListener {
-            startActivity(Intent(this@BlogDetails, BlogDetails::class.java))
+            startActivity(Intent(this@BlogDetails, BlogsCategory::class.java))
         }
     }
 }

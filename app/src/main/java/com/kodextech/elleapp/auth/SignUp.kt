@@ -25,7 +25,7 @@ class SignUp : BaseActivity() {
         btnSignUp.setOnClickListener {
             //signup here
             //validation()
-            startActivity(Intent(this@SignUp,Dashboard::class.java))
+            startActivity(Intent(this@SignUp,AuthAc::class.java))
         }
     }
 

@@ -16,7 +16,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.ElleApp">
-        <activity android:name=".sellcraft.SellCraft"></activity>
+        <activity android:name=".sellcraft.SellNow"></activity>
+        <activity android:name=".sellcraft.SellCraft" />
         <activity android:name=".blogs.BlogDetails" />
         <activity android:name=".blogs.CreativeBlog" />
         <activity android:name=".blogs.BlogsCategory" />

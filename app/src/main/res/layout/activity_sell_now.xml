@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/contentSellNow"
+    android:orientation="vertical"
+    tools:context=".sellcraft.SellNow">
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_logo_medium"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/_30sdp"
+        android:layout_marginEnd="@dimen/_30sdp"
+        android:orientation="horizontal"
+        android:weightSum="1">
+        <TextView
+            android:layout_weight=".5"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Raw Cost:"
+            android:textSize="@dimen/_14sdp"
+            android:gravity="start"
+            android:textColor="@color/appcolor"
+            android:fontFamily="@font/poppins_semibold"/>
+        <TextView
+            android:id="@+id/tvRawCostFinal"
+            android:layout_weight=".5"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Raw Cost:"
+            android:textSize="@dimen/_16sdp"
+            android:gravity="end"
+            android:textColor="@color/colorBlack"
+            android:fontFamily="@font/poppins_light"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_marginTop="@dimen/_10sdp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/_30sdp"
+        android:layout_marginEnd="@dimen/_30sdp"
+        android:orientation="horizontal"
+        android:weightSum="1">
+        <TextView
+            android:layout_weight=".5"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Employee Cost:"
+            android:textSize="@dimen/_14sdp"
+            android:gravity="start"
+            android:textColor="@color/appcolor"
+            android:fontFamily="@font/poppins_semibold"/>
+        <TextView
+            android:id="@+id/tvEmpCostFinal"
+            android:layout_weight=".5"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Raw Cost:"
+            android:textSize="@dimen/_16sdp"
+            android:gravity="end"
+            android:textColor="@color/colorBlack"
+            android:fontFamily="@font/poppins_light"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_marginTop="@dimen/_10sdp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/_30sdp"
+        android:layout_marginEnd="@dimen/_30sdp"
+        android:orientation="horizontal"
+        android:weightSum="1">
+        <TextView
+            android:layout_weight=".6"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Computed Price:"
+            android:textSize="@dimen/_16sdp"
+            android:gravity="start"
+            android:textColor="@color/appcolor"
+            android:fontFamily="@font/poppins_semibold"/>
+        <TextView
+            android:id="@+id/tvComputedPrice"
+            android:layout_weight=".4"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Raw Cost:"
+            android:textSize="@dimen/_16sdp"
+            android:gravity="end"
+            android:textColor="@color/colorBlack"
+            android:fontFamily="@font/poppins_light"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_marginTop="@dimen/_10sdp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/_30sdp"
+        android:layout_marginEnd="@dimen/_30sdp"
+        android:orientation="horizontal"
+        android:weightSum="1">
+
+        <TextView
+            android:layout_weight=".7"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Quantity to sell:"
+            android:textSize="@dimen/_14sdp"
+            android:gravity="start"
+            android:textColor="@color/appcolor"
+            android:fontFamily="@font/poppins_semibold"/>
+
+        <androidx.appcompat.widget.AppCompatEditText
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight=".3"
+            android:id="@+id/quantityToSell"
+            android:hint="123"
+            android:gravity="center"
+            android:background="@drawable/bg_border"/>
+    </LinearLayout>
+
+    <TextView
+        android:layout_marginTop="@dimen/_10sdp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Once all product sold! \n You make"
+        android:textSize="@dimen/_14sdp"
+        android:gravity="center"
+        android:textColor="@color/appcolor"
+        android:fontFamily="@font/poppins_semibold"/>
+
+    <TextView
+        android:id="@+id/totalProfit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:text=" PKR"
+        android:padding="@dimen/_10sdp"
+        android:textSize="@dimen/_14sdp"
+        android:gravity="center"
+        android:textColor="@color/appcolor"
+        android:background="@drawable/bg_border"
+
+        android:fontFamily="@font/poppins_semibold"/>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:layout_marginStart="@dimen/_30sdp"
+        android:layout_marginEnd="@dimen/_30sdp"
+        android:id="@+id/bntSellNow"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:layout_marginBottom="@dimen/_30sdp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Sell Now"
+        android:textAllCaps="false"
+        android:background="@drawable/bg_border"
+        android:backgroundTint="@color/appcolor"
+        android:gravity="center"
+        android:textColor="@color/colorWhite"
+        android:textSize="@dimen/_16sdp"
+        android:fontFamily="@font/poppins_bold"/>
+
+
+</LinearLayout>

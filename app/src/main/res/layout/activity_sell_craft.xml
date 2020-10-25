@@ -1,9 +1,574 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/colorWhite"
+    android:id="@+id/contentSellCraft"
     tools:context=".sellcraft.SellCraft">
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/ivLogo"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/_70sdp"
+        android:layout_marginStart="@dimen/_75sdp"
+        android:layout_marginEnd="@dimen/_75sdp"
+        android:src="@drawable/ic_app_logo"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentStart="true"/>
+
+    <ScrollView
+        android:layout_below="@id/ivLogo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentStart="true">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_marginStart="@dimen/_10sdp"
+            android:id="@+id/tvProductdetail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentStart="true"
+            android:text="Product Details:"
+            android:textColor="@color/appcolor"
+            android:textSize="@dimen/_16sdp"
+            android:fontFamily="@font/poppins_bold"/>
+
+        <LinearLayout
+            android:layout_below="@+id/tvProductdetail"
+            android:id="@+id/llfirstrow"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginStart="@dimen/_10sdp"
+            android:layout_marginEnd="@dimen/_10sdp"
+            android:weightSum="1">
+
+            <RelativeLayout
+                android:id="@+id/rlpname"
+                android:layout_marginEnd="@dimen/_5sdp"
+                android:layout_weight=".5"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_20sdp">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_50sdp"
+                    android:layout_marginTop="@dimen/_8sdp"
+                    android:background="@drawable/bg_border"
+                    android:orientation="horizontal">
+                    <androidx.appcompat.widget.AppCompatEditText
+                        android:id="@+id/etProductName"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@android:color/transparent"
+                        android:fontFamily="@font/poppins_regular"
+                        android:gravity="center_vertical"
+                        android:hint="Product Name"
+                        android:inputType="text"
+                        android:maxLines="1"
+                        android:paddingStart="@dimen/_10sdp"
+                        android:paddingEnd="@dimen/_10sdp"
+                        android:singleLine="true"
+                        android:textColor="@color/appcolor"
+                        android:textColorHint="@color/appcolorlight"
+                        android:textSize="@dimen/_12sdp" />
+                </LinearLayout>
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_15sdp"
+                    android:background="@color/white"
+                    android:fontFamily="@font/poppins_regular"
+                    android:paddingStart="@dimen/_3sdp"
+                    android:paddingEnd="@dimen/_3sdp"
+                    android:text="Name *"
+                    android:textColor="@color/appcolor"
+                    android:textSize="@dimen/_12sdp" />
+            </RelativeLayout>
+            <RelativeLayout
+                android:id="@+id/rlquan"
+                android:layout_below="@id/rlphone"
+                android:layout_weight=".5"
+                android:layout_width="0dp"
+                android:layout_marginStart="@dimen/_5sdp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_20sdp">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_50sdp"
+                    android:layout_marginTop="@dimen/_8sdp"
+                    android:background="@drawable/bg_border"
+                    android:orientation="horizontal">
+                    <androidx.appcompat.widget.AppCompatEditText
+                        android:id="@+id/etProductQuantity"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@android:color/transparent"
+                        android:fontFamily="@font/poppins_regular"
+                        android:gravity="center_vertical"
+                        android:hint="Quantity"
+                        android:inputType="number"
+                        android:maxLines="1"
+                        android:paddingStart="@dimen/_10sdp"
+                        android:paddingEnd="@dimen/_10sdp"
+                        android:singleLine="true"
+                        android:textColor="@color/appcolor"
+                        android:textColorHint="@color/appcolorlight"
+                        android:textSize="@dimen/_12sdp" />
+                </LinearLayout>
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_15sdp"
+                    android:background="@color/white"
+                    android:fontFamily="@font/poppins_regular"
+                    android:paddingStart="@dimen/_3sdp"
+                    android:paddingEnd="@dimen/_3sdp"
+                    android:text="Quantity *"
+                    android:textColor="@color/appcolor"
+                    android:textSize="@dimen/_12sdp" />
+            </RelativeLayout>
+
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/llsecondrow"
+            android:layout_below="@id/llfirstrow"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginStart="@dimen/_10sdp"
+            android:layout_marginEnd="@dimen/_10sdp"
+            android:weightSum="1">
+
+            <RelativeLayout
+
+                android:layout_marginEnd="@dimen/_5sdp"
+                android:layout_weight=".5"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_10sdp">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_50sdp"
+                    android:background="@drawable/bg_border"
+                    android:orientation="horizontal">
+                    <androidx.appcompat.widget.AppCompatEditText
+                        android:id="@+id/etProductUnitPrice"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@android:color/transparent"
+                        android:fontFamily="@font/poppins_regular"
+                        android:gravity="center_vertical"
+                        android:hint="Unit Price"
+                        android:inputType="numberDecimal"
+                        android:maxLines="1"
+                        android:paddingStart="@dimen/_10sdp"
+                        android:paddingEnd="@dimen/_10sdp"
+                        android:singleLine="true"
+                        android:textColor="@color/appcolor"
+                        android:textColorHint="@color/appcolorlight"
+                        android:textSize="@dimen/_12sdp" />
+                </LinearLayout>
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_15sdp"
+                    android:background="@color/white"
+                    android:fontFamily="@font/poppins_regular"
+                    android:paddingStart="@dimen/_3sdp"
+                    android:paddingEnd="@dimen/_3sdp"
+                    android:text="Unit Price *"
+                    android:textColor="@color/appcolor"
+                    android:textSize="@dimen/_12sdp" />
+            </RelativeLayout>
+            <RelativeLayout
+
+                android:layout_below="@id/rlphone"
+                android:layout_weight=".5"
+                android:layout_width="0dp"
+                android:layout_marginStart="@dimen/_5sdp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_10sdp">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_50sdp"
+                    android:background="@drawable/bg_border"
+                    android:orientation="horizontal">
+                    <androidx.appcompat.widget.AppCompatEditText
+                        android:id="@+id/etProductExtraCost"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@android:color/transparent"
+                        android:fontFamily="@font/poppins_regular"
+                        android:gravity="center_vertical"
+                        android:hint="extra cost"
+                        android:inputType="numberDecimal"
+                        android:maxLines="1"
+                        android:paddingStart="@dimen/_10sdp"
+                        android:paddingEnd="@dimen/_10sdp"
+                        android:singleLine="true"
+                        android:textColor="@color/appcolor"
+                        android:textColorHint="@color/appcolorlight"
+                        android:textSize="@dimen/_12sdp" />
+                </LinearLayout>
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_15sdp"
+                    android:background="@color/white"
+                    android:fontFamily="@font/poppins_regular"
+                    android:paddingStart="@dimen/_3sdp"
+                    android:paddingEnd="@dimen/_3sdp"
+                    android:text="Any Extra Cost"
+                    android:textColor="@color/appcolor"
+                    android:textSize="@dimen/_12sdp" />
+            </RelativeLayout>
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_marginStart="@dimen/_10sdp"
+            android:id="@+id/tvEmpDetails"
+            android:layout_marginTop="@dimen/_30sdp"
+            android:layout_below="@id/llsecondrow"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentStart="true"
+            android:text="Emplyee Details:"
+            android:textColor="@color/appcolor"
+            android:textSize="@dimen/_16sdp"
+            android:fontFamily="@font/poppins_bold"/>
+
+        <LinearLayout
+            android:layout_below="@+id/tvEmpDetails"
+            android:id="@+id/llempfirstrow"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginStart="@dimen/_10sdp"
+            android:layout_marginEnd="@dimen/_10sdp"
+            android:weightSum="1">
+
+            <RelativeLayout
+                android:layout_marginEnd="@dimen/_5sdp"
+                android:layout_weight=".5"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_20sdp">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_50sdp"
+                    android:layout_marginTop="@dimen/_8sdp"
+                    android:background="@drawable/bg_border"
+                    android:orientation="horizontal">
+                    <androidx.appcompat.widget.AppCompatEditText
+                        android:id="@+id/etEmployeDesignation"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@android:color/transparent"
+                        android:fontFamily="@font/poppins_regular"
+                        android:gravity="center_vertical"
+                        android:hint="Employee Designation"
+                        android:inputType="text"
+                        android:maxLines="1"
+                        android:paddingStart="@dimen/_10sdp"
+                        android:paddingEnd="@dimen/_10sdp"
+                        android:singleLine="true"
+                        android:textColor="@color/appcolor"
+                        android:textColorHint="@color/appcolorlight"
+                        android:textSize="@dimen/_12sdp" />
+                </LinearLayout>
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_15sdp"
+                    android:background="@color/white"
+                    android:fontFamily="@font/poppins_regular"
+                    android:paddingStart="@dimen/_3sdp"
+                    android:paddingEnd="@dimen/_3sdp"
+                    android:text="Designation *"
+                    android:textColor="@color/appcolor"
+                    android:textSize="@dimen/_12sdp" />
+            </RelativeLayout>
+            <RelativeLayout
+
+                android:layout_weight=".5"
+                android:layout_width="0dp"
+                android:layout_marginStart="@dimen/_5sdp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_20sdp">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_50sdp"
+                    android:layout_marginTop="@dimen/_8sdp"
+                    android:background="@drawable/bg_border"
+                    android:orientation="horizontal">
+                    <androidx.appcompat.widget.AppCompatEditText
+                        android:id="@+id/etEmployeeSalary"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@android:color/transparent"
+                        android:fontFamily="@font/poppins_regular"
+                        android:gravity="center_vertical"
+                        android:hint="Salary"
+                        android:inputType="number"
+                        android:maxLines="1"
+                        android:paddingStart="@dimen/_10sdp"
+                        android:paddingEnd="@dimen/_10sdp"
+                        android:singleLine="true"
+                        android:textColor="@color/appcolor"
+                        android:textColorHint="@color/appcolorlight"
+                        android:textSize="@dimen/_12sdp" />
+                </LinearLayout>
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_15sdp"
+                    android:background="@color/white"
+                    android:fontFamily="@font/poppins_regular"
+                    android:paddingStart="@dimen/_3sdp"
+                    android:paddingEnd="@dimen/_3sdp"
+                    android:text="Salary *"
+                    android:textColor="@color/appcolor"
+                    android:textSize="@dimen/_12sdp" />
+            </RelativeLayout>
+
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/llempsecondrow"
+            android:layout_below="@id/llempfirstrow"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginStart="@dimen/_10sdp"
+            android:layout_marginEnd="@dimen/_10sdp"
+            android:weightSum="1">
+
+            <RelativeLayout
+
+                android:layout_marginEnd="@dimen/_5sdp"
+                android:layout_weight=".5"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_10sdp">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_50sdp"
+                    android:background="@drawable/bg_border"
+                    android:orientation="horizontal">
+                    <androidx.appcompat.widget.AppCompatEditText
+                        android:id="@+id/etEmployeedaysworked"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@android:color/transparent"
+                        android:fontFamily="@font/poppins_regular"
+                        android:gravity="center_vertical"
+                        android:hint="Work Days #"
+                        android:inputType="number"
+                        android:maxLines="1"
+                        android:paddingStart="@dimen/_10sdp"
+                        android:paddingEnd="@dimen/_10sdp"
+                        android:singleLine="true"
+                        android:textColor="@color/appcolor"
+                        android:textColorHint="@color/appcolorlight"
+                        android:textSize="@dimen/_12sdp" />
+                </LinearLayout>
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_15sdp"
+                    android:background="@color/white"
+                    android:fontFamily="@font/poppins_regular"
+                    android:paddingStart="@dimen/_3sdp"
+                    android:paddingEnd="@dimen/_3sdp"
+                    android:text="Work Days #"
+                    android:textColor="@color/appcolor"
+                    android:textSize="@dimen/_12sdp" />
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_weight=".5"
+                android:layout_width="0dp"
+                android:layout_marginStart="@dimen/_5sdp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_10sdp">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_50sdp"
+                    android:background="@drawable/bg_border"
+                    android:orientation="horizontal">
+                    <androidx.appcompat.widget.AppCompatEditText
+                        android:id="@+id/etEMployeeExtraPay"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@android:color/transparent"
+                        android:fontFamily="@font/poppins_regular"
+                        android:gravity="center_vertical"
+                        android:hint="extra pay"
+                        android:inputType="numberDecimal"
+                        android:maxLines="1"
+                        android:paddingStart="@dimen/_10sdp"
+                        android:paddingEnd="@dimen/_10sdp"
+                        android:singleLine="true"
+                        android:textColor="@color/appcolor"
+                        android:textColorHint="@color/appcolorlight"
+                        android:textSize="@dimen/_12sdp" />
+                </LinearLayout>
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_15sdp"
+                    android:background="@color/white"
+                    android:fontFamily="@font/poppins_regular"
+                    android:paddingStart="@dimen/_3sdp"
+                    android:paddingEnd="@dimen/_3sdp"
+                    android:text="Extra Payment *"
+                    android:textColor="@color/appcolor"
+                    android:textSize="@dimen/_12sdp" />
+            </RelativeLayout>
+
+        </LinearLayout>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:layout_marginStart="@dimen/_10sdp"
+            android:layout_marginEnd="@dimen/_10sdp"
+            android:id="@+id/bntCalculate"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:layout_below="@id/llempsecondrow"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Calculate"
+            android:background="@drawable/bg_border"
+            android:backgroundTint="@color/appcolor"
+            android:gravity="center"
+            android:textColor="@color/colorWhite"
+            android:textSize="@dimen/_16sdp"
+            android:fontFamily="@font/poppins_bold"/>
+
+
+        <TextView
+            android:id="@+id/tvRawCost"
+            android:layout_marginStart="@dimen/_10sdp"
+            android:layout_marginEnd="@dimen/_60sdp"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:layout_below="@id/bntCalculate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentStart="true"
+            android:text="Raw Cost"
+            android:gravity="end"
+            android:textColor="@color/appcolor"
+            android:textSize="@dimen/_16sdp"
+            android:fontFamily="@font/poppins_bold"/>
+
+        <TextView
+            android:id="@+id/tvEmpCost"
+            android:layout_marginStart="@dimen/_10sdp"
+            android:layout_marginEnd="@dimen/_60sdp"
+
+            android:layout_below="@id/tvRawCost"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentStart="true"
+            android:text="Employee Cost"
+            android:gravity="end"
+            android:textColor="@color/appcolor"
+            android:textSize="@dimen/_16sdp"
+            android:fontFamily="@font/poppins_bold"/>
+
+
+        <RelativeLayout
+            android:layout_below="@id/tvEmpCost"
+            android:id="@+id/profitwala"
+            android:layout_width="match_parent"
+            android:layout_marginStart="@dimen/_60sdp"
+            android:layout_marginEnd="@dimen/_60sdp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_10sdp">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_50sdp"
+                android:background="@drawable/bg_border"
+                android:orientation="horizontal">
+                <androidx.appcompat.widget.AppCompatEditText
+                    android:id="@+id/etProfit"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@android:color/transparent"
+                    android:fontFamily="@font/poppins_regular"
+                    android:gravity="center_vertical"
+                    android:hint="profit in pkr"
+                    android:inputType="number"
+                    android:maxLines="1"
+                    android:paddingStart="@dimen/_10sdp"
+                    android:paddingEnd="@dimen/_10sdp"
+                    android:singleLine="true"
+                    android:textColor="@color/appcolor"
+                    android:textColorHint="@color/appcolorlight"
+                    android:textSize="@dimen/_12sdp" />
+            </LinearLayout>
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_15sdp"
+                android:background="@color/white"
+                android:fontFamily="@font/poppins_regular"
+                android:paddingStart="@dimen/_3sdp"
+                android:paddingEnd="@dimen/_3sdp"
+                android:text="Profit in PKR *"
+                android:textColor="@color/appcolor"
+                android:textSize="@dimen/_12sdp" />
+        </RelativeLayout>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:layout_marginStart="@dimen/_10sdp"
+            android:layout_marginEnd="@dimen/_10sdp"
+            android:id="@+id/bntNextSellCraft"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:layout_marginBottom="@dimen/_30sdp"
+            android:layout_below="@id/profitwala"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Next"
+            android:background="@drawable/bg_border"
+            android:backgroundTint="@color/appcolor"
+            android:gravity="center"
+            android:textColor="@color/colorWhite"
+            android:textSize="@dimen/_16sdp"
+            android:fontFamily="@font/poppins_bold"/>
+
+
+    </RelativeLayout>
+    </ScrollView>
+
+</RelativeLayout>

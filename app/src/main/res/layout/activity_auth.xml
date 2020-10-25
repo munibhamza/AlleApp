@@ -8,10 +8,19 @@
     android:background="@color/colorWhite"
     tools:context=".auth.AuthAc">
 
-    <RelativeLayout
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/ivLogo"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:src="@drawable/ic_logo_medium"/>
+
+    <RelativeLayout
+        app:layout_constraintTop_toBottomOf="@+id/ivLogo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -143,7 +152,7 @@
             android:layout_height="@dimen/_50sdp"
             android:layout_marginTop="@dimen/_20sdp"
             android:focusable="false"
-            android:text="Cintinue"
+            android:text="Continue"
             android:layout_below="@id/rlPassword"/>
         <androidx.appcompat.widget.AppCompatTextView
             android:id="@+id/forgotPassword"

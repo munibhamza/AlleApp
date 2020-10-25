@@ -6,6 +6,7 @@ import android.os.Bundle
 import com.kodextech.elleapp.R
 import com.kodextech.elleapp.blogs.BlogsCategory
 import com.kodextech.elleapp.creativetutorials.TutorialsCategory
+import com.kodextech.elleapp.sellcraft.SellCraft
 import kotlinx.android.synthetic.main.activity_dashboard.*
 
 class Dashboard : AppCompatActivity() {
@@ -21,7 +22,7 @@ class Dashboard : AppCompatActivity() {
             startActivity(Intent(this@Dashboard,BlogsCategory::class.java))
         }
         llsellcraft.setOnClickListener {
-
+            startActivity(Intent(this@Dashboard,SellCraft::class.java))
         }
         llexploremore.setOnClickListener {
 
